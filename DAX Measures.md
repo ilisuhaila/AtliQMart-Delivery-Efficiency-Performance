@@ -77,7 +77,8 @@
 
         = CALCULATE(
             COUNTROWS(fact_order_lines),
-            fact_order_lines[actual_delivery_date] > fact_order_lines[agreed_delivery_date])
+            fact_order_lines[actual_delivery_date] 
+            > fact_order_lines[agreed_delivery_date])
 
 #### Delayed Days 
 
