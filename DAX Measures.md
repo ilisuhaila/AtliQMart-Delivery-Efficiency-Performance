@@ -89,6 +89,14 @@
               fact_order_lines[actual_delivery_date],
               DAY))
 
+#### LIFR % 
+
+        = DIVIDE(
+            SUM(
+              fact_order_lines[In Full]),
+            [Total Order Lines],
+            0)
+
 #### Total Product Delivered 
 
         = SUM(fact_order_lines[delivery_qty])
