@@ -1,1 +1,0 @@
-# AtliQMart-Delivery-Efficiency-Performance
