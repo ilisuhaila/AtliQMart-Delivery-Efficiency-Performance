@@ -8,8 +8,7 @@
 
         = DIVIDE(
             SUM(
-              fact_order_lines[In Full]
-              ),
+              fact_order_lines[In Full]),
             [Total Order Lines],
             0)
          
@@ -17,11 +16,9 @@
 
         = DIVIDE(
             SUM(
-                fact_order_lines[delivery_qty]
-            ),
+                fact_order_lines[delivery_qty]),
             SUM(
-                fact_order_lines[order_qty]
-            ),
+                fact_order_lines[order_qty]),
             0)
 
 #### Total Orders
@@ -32,24 +29,21 @@
 
         = DIVIDE(
             SUM(
-                fact_orders_aggregate[on_time]
-            ),
+                fact_orders_aggregate[on_time]),
             [Total Orders])
 
 #### IF % 
 
         = DIVIDE(
             SUM(
-                fact_orders_aggregate[in_full]
-            ),
+                fact_orders_aggregate[in_full]),
             [Total Orders])
 
 #### OTIF % 
 
         = DIVIDE(
             SUM(
-                fact_orders_aggregate[otif]
-            ),
+                fact_orders_aggregate[otif]),
             [Total Orders])
 
 #### OT Target % 
